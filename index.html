@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Canandaigua Development Company</title>
+  <meta name="description" content="Canandaigua Development Company — 290 West Main Street, Victor, NY 14564.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <meta property="og:title" content="Canandaigua Development Company">
+  <meta property="og:image" content="https://cdgadevelopment.com/icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Saira:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #03113f;
+      --navy-soft: #1d2b5c;
+      --ink: #1b2233;
+      --muted: #5b6478;
+      --line: #e3e6ee;
+      --bg: #ffffff;
+      --tint: #f5f7fb;
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; }
+    body {
+      font-family: "Saira", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.5;
+      -webkit-font-smoothing: antialiased;
+    }
+    a { color: var(--navy); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .hero {
+      display: flex;
+      justify-content: center;
+      padding: 64px 16px 48px;
+    }
+    .hero img {
+      width: min(440px, 80vw);
+      height: auto;
+    }
+
+    .contact {
+      background: var(--tint);
+      border-top: 1px solid var(--line);
+      padding: 56px 16px 64px;
+    }
+    .wrap { max-width: 1000px; margin: 0 auto; }
+    h2 {
+      margin: 0 0 6px;
+      font-weight: 600;
+      font-size: 0.8rem;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: var(--navy);
+    }
+    .rule { width: 40px; height: 3px; background: var(--navy); margin: 0 0 28px; }
+
+    .office {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px 24px;
+      align-items: baseline;
+      margin-bottom: 44px;
+      font-size: 1.15rem;
+    }
+    .office address { font-style: normal; }
+    .office .map { font-size: 0.95rem; }
+
+    .people {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+      gap: 20px;
+    }
+    .card {
+      background: #fff;
+      border: 1px solid var(--line);
+      border-top: 3px solid var(--navy);
+      border-radius: 4px;
+      padding: 22px 20px;
+    }
+    .card h3 {
+      margin: 0 0 10px;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: var(--navy);
+    }
+    .card p { margin: 0 0 12px; font-size: 0.93rem; overflow-wrap: break-word; }
+    .card p:last-child { margin-bottom: 0; }
+    .card .label {
+      display: block;
+      color: var(--muted);
+      font-size: 0.8rem;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    footer {
+      text-align: center;
+      padding: 28px 16px;
+      font-size: 0.85rem;
+      color: var(--muted);
+      font-weight: 300;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img src="logo.png" width="900" height="828" alt="Canandaigua Development Company">
+  </header>
+
+  <main class="contact">
+    <div class="wrap">
+      <h2>Office</h2>
+      <div class="rule"></div>
+      <div class="office">
+        <address>290 West Main Street, Victor, NY 14564</address>
+        <a class="map" href="https://www.google.com/maps/search/?api=1&query=290+West+Main+Street%2C+Victor%2C+NY+14564" target="_blank" rel="noopener">View map &rarr;</a>
+      </div>
+
+      <h2>Contact</h2>
+      <div class="rule"></div>
+      <div class="people">
+        <div class="card">
+          <h3>Robert Brenner</h3>
+          <p><span class="label">Email</span><a href="mailto:rbrenner@cdgadevelopment.com">rbrenner@cdgadevelopment.com</a></p>
+          <p><span class="label">Phone</span><a href="tel:+15855981251">585-598-1251</a></p>
+        </div>
+        <div class="card">
+          <h3>Brian Mahoney</h3>
+          <p><span class="label">Email</span><a href="mailto:bmahoney@cdgadevelopment.com">bmahoney@cdgadevelopment.com</a></p>
+          <p><span class="label">Phone</span><a href="tel:+15855981252">585-598-1252</a></p>
+        </div>
+        <div class="card">
+          <h3>Nick Parilli</h3>
+          <p><span class="label">Email</span><a href="mailto:nparilli@cdgadevelopment.com">nparilli@cdgadevelopment.com</a></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer>&copy; <span id="yr">2026</span> Canandaigua Development Company</footer>
+  <script>document.getElementById('yr').textContent = new Date().getFullYear();</script>
+</body>
+</html>
